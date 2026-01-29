@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Mares Roofing</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    </head>
+    <body class="d-flex flex-column h-100">
+       <main class="flex-shrink-0">
+
+<!-- Navigation / Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container px-5">
+    <a class="navbar-brand" href="index.html">Mares Roofing</a>
+    
+    <!-- Hamburger button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <span class="navbar-text ms-lg-3">
+        📞 <a href="tel:+17856149143" class="text-white text-decoration-none">(785) 614-9143</a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<!-- Include Bootstrap JS Bundle at the end of body -->
+      
+   <!-- Header / Hero Section -->
+<section class="hero-overlay" style="
+    position: relative;
+    background-image: url('/images/Roofing-Companies-Near-Me.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+">
+  <!-- Full-section dark overlay -->
+  <div style="
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+  "></div>
+
+  <!-- Hero content -->
+  <div class="hero-content" style="
+      position: relative;
+      z-index: 2;
+      padding: 2.5rem;
+      border-radius: 12px;
+      max-width: 900px;
+      color: #fff;
+      text-align: center;
+  ">
+    <h1>Mares Roofing – Kansas’ Trusted Roofing Experts</h1>
+    <p>
+      Protecting your home with quality craftsmanship & reliable service for over
+      35 years. From storm damage repairs to full roof replacements, we deliver
+      dependable roofing solutions.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="tel:17856149143" class="btn btn-primary btn-lg me-2">
+        Get Your Free Roof Quote
+      </a>
+      <a href="tel:17856149143" class="btn btn-outline-light btn-lg">
+        Schedule a Free Inspection
+      </a>
+    </div>
+
+    <div class="trust-signals mt-4 text-white">
+  <span class="me-3"><i class="bi bi-check-circle-fill me-1"></i>Licensed & Insured</span>
+  <span class="me-3"><i class="bi bi-check-circle-fill me-1"></i>Local Kansas Roofing Specialists</span>
+  <span><i class="bi bi-check-circle-fill me-1"></i>Quality Materials & Workmanship</span>
+</div>
+
+
+
+  </div>
+</section>
+
+
+</main>
+
+<!-- About Section -->
+<section class="py-5" id="about">
+  <div class="container px-5 my-5">
+    <div class="row gx-5 align-items-center">
+      
+      <!-- Image -->
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img class="img-fluid rounded-3 shadow" src="https://via.placeholder.com/600x400?text=Mares+Roofing+Team" alt="Mares Roofing Team">
+      </div>
+      
+      <!-- Text -->
+      <div class="col-lg-6">
+        <h2 class="fw-bolder">About Mares Roofing</h2>
+        <p class="text-muted mb-4">
+          Mares Roofing has been serving homeowners and businesses across Kansas for over 35 years. Our team of licensed and insured roofing experts is committed to providing quality craftsmanship, reliable service, and long-lasting roofing solutions.
+        </p>
+        <p class="text-muted mb-4">
+          From minor repairs to full roof replacements, we handle every project with professionalism and care. We take pride in protecting your home or business from the elements while enhancing its value and curb appeal.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#contact">Get a Free Estimate</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Features / Roofing Services Section -->
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <!-- Section heading -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h2 class="fw-bolder mb-0">Our Roofing Services</h2>
+                <p class="text-muted">Comprehensive roofing solutions for homes and businesses in Kansas. Quality, reliability, and professional craftsmanship.</p>
+            </div>
+
+            <!-- Services cards -->
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 text-center p-4">
+                            <i class="bi bi-house-door-fill fs-2"></i>
+                        </div>
+                        <h2 class="h5">Roof Replacement</h2>
+                        <p class="mb-0">Complete roof replacement with high-quality materials for durability and lasting protection against the elements.</p>
+                    </div>
+
+                    <div class="col mb-5 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 text-center p-4">
+                            <i class="bi bi-tools fs-2"></i>
+                        </div>
+                        <h2 class="h5">Roof Repair</h2>
+                        <p class="mb-0">Expert repair services for leaks, storm damage, and wear & tear to keep your roof safe and secure.</p>
+                    </div>
+
+                    <div class="col mb-5 mb-md-0 h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 text-center p-4">
+                            <i class="bi bi-shield-check fs-2"></i>
+                        </div>
+                        <h2 class="h5">Storm Damage Restoration</h2>
+                        <p class="mb-0">Fast and reliable restoration after storms to protect your property and prevent further damage.</p>
+                    </div>
+
+                    <div class="col h-100">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 text-center p-4">
+                            <i class="bi bi-clipboard-check fs-2"></i>
+                        </div>
+                        <h2 class="h5">Free Inspections</h2>
+                        <p class="mb-0">Professional roof inspections to assess damage, estimate repairs, and keep your roof in top condition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            
+            <!-- Gallery Section -->
+<section class="py-5" id="gallery">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="text-center">
+                    <h2 class="fw-bolder">Our Recent Roofing Projects</h2>
+                    <p class="lead fw-normal text-muted mb-5">
+                        Take a look at some of the quality roofing work Mares Roofing has completed across Kansas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gx-5">
+            <!-- Project 1 -->
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://via.placeholder.com/600x350?text=Roof+Replacement" alt="Roof Replacement Project" />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Roof Replacement</div>
+                        <h5 class="card-title mb-3">Complete Shingle Roof Replacement</h5>
+                        <p class="card-text mb-0">
+                            Full residential roof replacement using durable, weather-resistant shingles.
+                        </p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <small class="text-muted">📍 Topeka, KS</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://via.placeholder.com/600x350?text=Roof+Repair" alt="Roof Repair Project" />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Roof Repair</div>
+                        <h5 class="card-title mb-3">Leak Repair & Shingle Replacement</h5>
+                        <p class="card-text mb-0">
+                            Quick and effective roof repairs to stop leaks and prevent further damage.
+                        </p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <small class="text-muted">📍 Lawrence, KS</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <img class="card-img-top" src="https://via.placeholder.com/600x350?text=Storm+Damage" alt="Storm Damage Restoration" />
+                    <div class="card-body p-4">
+                        <div class="badge bg-primary bg-gradient rounded-pill mb-2">Storm Damage</div>
+                        <h5 class="card-title mb-3">Storm Damage Restoration</h5>
+                        <p class="card-text mb-0">
+                            Insurance-ready storm damage repairs after severe wind and hail.
+                        </p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                        <small class="text-muted">📍 Manhattan, KS</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<<!-- Gallery Section ends here -->
+</section>
+
+<!-- Kansas Map -->
+<section class="py-5" id="map-section">
+  <div class="container px-5">
+    <h2 class="fw-bolder text-center mb-4">Service Area – Major Kansas Cities</h2>
+    <div id="kansasMap" style="height: 500px; width: 100%; border: 1px solid #ccc;"></div>
+  </div>
+</section>
+
+
+
+
+<script>
+  // Initialize map centered on Kansas
+  const map = L.map('kansasMap').setView([38.5, -97.0], 6);
+
+  // Add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Major cities
+  const cities = [
+    { name: 'Wichita', coords: [37.6922, -97.3375] },
+    { name: 'Overland Park', coords: [38.9822, -94.6708] },
+    { name: 'Kansas City (KS)', coords: [39.1141, -94.6275] },
+    { name: 'Topeka', coords: [39.0558, -95.6890] },
+    { name: 'Olathe', coords: [38.8814, -94.8191] }
+  ];
+
+  // Add markers
+  const markers = cities.map(city => {
+    return L.marker(city.coords).bindPopup(`<strong>${city.name}</strong>`).addTo(map);
+  });
+
+  // Fit map bounds to all markers
+  const group = L.featureGroup(markers);
+  map.fitBounds(group.getBounds().pad(0.2));
+</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+  <div class="container px-5">
+    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+      
+      <!-- Left: Copyright -->
+      <div class="col-auto">
+        <div class="small m-0 text-white">
+          &copy; Mares Roofing, Inc. 2026
+        </div>
+      </div>
+
+      <!-- Right: Links -->
+      <div class="col-auto">
+        <a class="link-light small" href="#!">Privacy</a>
+        <span class="text-white mx-1">&middot;</span>
+        <a class="link-light small" href="#!">Terms</a>
+        <span class="text-white mx-1">&middot;</span>
+        <a class="link-light small" href="#contact">Contact</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+    </body>
+</html>
